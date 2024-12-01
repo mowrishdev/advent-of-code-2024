@@ -12,7 +12,7 @@ public class Puzzle1 {
     List<Long> rightList = new ArrayList<>();
     long answer = 0L;
 
-    try (InputStream inputStream = Puzzle1.class.getResourceAsStream("puzzle-1-input.txt");
+    try (InputStream inputStream = Puzzle1.class.getResourceAsStream("day-1-input.txt");
          Scanner scanner = new Scanner(inputStream)) {
       while (scanner.hasNextLine()) {
         String line = scanner.nextLine().trim();
