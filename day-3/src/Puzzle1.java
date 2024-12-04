@@ -9,7 +9,7 @@ public class Puzzle1 {
   public static void main(String[] args) throws IOException {
 
     try (InputStream inputStream = Puzzle1.class.getResourceAsStream("day-3-input.txt");
-         Scanner scanner = new Scanner(inputStream)) {
+        Scanner scanner = new Scanner(inputStream)) {
 
       long answer = 0L;
 

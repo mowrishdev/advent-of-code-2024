@@ -13,7 +13,7 @@ public class Puzzle1 {
     long answer = 0L;
 
     try (InputStream inputStream = Puzzle1.class.getResourceAsStream("day-1-input.txt");
-         Scanner scanner = new Scanner(inputStream)) {
+        Scanner scanner = new Scanner(inputStream)) {
       while (scanner.hasNextLine()) {
         String line = scanner.nextLine().trim();
         String[] numbers = line.split(" {3}");

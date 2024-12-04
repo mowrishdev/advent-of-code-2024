@@ -9,7 +9,7 @@ public class Puzzle1 {
     long answer = 0L;
 
     try (InputStream inputStream = Puzzle1.class.getResourceAsStream("day-2-input.txt");
-         Scanner scanner = new Scanner(inputStream)) {
+        Scanner scanner = new Scanner(inputStream)) {
       while (scanner.hasNextLine()) {
         String line = scanner.nextLine().trim();
         String[] levelsStringArray = line.split(" ");
@@ -31,7 +31,7 @@ public class Puzzle1 {
     boolean isIncreasing = true, isDecreasing = true;
 
     for (int i = 1; i < levels.length; i++) {
-      long difference = levels[i] - levels[i-1];
+      long difference = levels[i] - levels[i - 1];
       if (Math.abs(difference) < 1 || Math.abs(difference) > 3) {
         return false;
       }
